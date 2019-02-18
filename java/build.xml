@@ -93,7 +93,9 @@
 				<attribute name="Main-Class" value="com.mxgraph.view.mxGraph"/>
 			</manifest>
 			<fileset dir="${source.home}">
-				<exclude name="**/*.java"/>
+				<include name="**/*.java"/>
+				<include name="**/*.gif"/>
+				<include name="**/*.properties"/>
 			</fileset>
 			<fileset dir="${basedir}/classes">
 				<include name="com/mxgraph/**"/>
